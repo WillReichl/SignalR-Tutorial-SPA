@@ -5,11 +5,12 @@ import { NgModule } from '@angular/core';
 import { ToastModule } from 'primeng/toast';
 
 import { AppComponent } from './app.component';
+import { MessageService } from 'primeng/components/common/messageservice';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, BrowserAnimationsModule, ToastModule],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
